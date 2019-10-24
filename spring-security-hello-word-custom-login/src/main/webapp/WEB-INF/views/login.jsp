@@ -20,7 +20,7 @@
             <div class="login-card">
                 <div class="login-form">
                     <c:url var="loginUrl" value="/login"/>
-                    <form action="${loginUrl}" method="post" class="form-inline">
+                    <form action="${loginUrl}" method="post">
                         <c:if test="${param.error != null}">
                             <div class="alert alert-danger">
                                 <p>Invalid username and password</p>
@@ -41,13 +41,14 @@
                             <input type="password" class="form-control" id="password" name="password" placeholder="Enter password" required>
                         </div>
                         <input type="hidden" name="${_csrf.parameterName}" value="${_csrf.token}" />
-                        <button type="submit" class="btn btn-primary">Submit</button>
+                        <div class="form-group">
+                            <button type="submit" class="btn btn-primary">Submit</button>
+                        </div>
                     </form>
                 </div>
             </div>
         </div>
     </div>
-
 
     <script src="<c:url value="/webjars/jquery/3.3.1-1/jquery.min.js"/>"></script>
     <script src="<c:url value="/webjars/popper.js/1.14.3/popper.min.js"/>"></script>
