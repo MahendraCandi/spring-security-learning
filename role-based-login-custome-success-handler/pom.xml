@@ -8,7 +8,7 @@
     <name>role-based-login-custome-success-handler Maven Webapp</name>
     <url>http://maven.apache.org</url>
     <properties>
-        <spring.version>5.1.3.RELEASE</spring.version>
+        <spring.version>5.2.20.RELEASE</spring.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
